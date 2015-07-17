@@ -1,0 +1,35 @@
+/* Config */
+$container-width: 980px;
+$container-flexbox: false;
+/* end Config */
+%container {
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: $container-width;
+    height: 100%;
+}
+%clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+.container {
+    @extend %container;
+    @extend %clearfix;
+}
+//reset
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+    list-style-type: none;
+   }
+   ul {
+    margin-left: 0;
+    padding-left: 0;
+   }

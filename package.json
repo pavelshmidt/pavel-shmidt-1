@@ -1,0 +1,9 @@
+{
+  "name": "07-2015-pavel-shmidt-1",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3"
+  }
+}

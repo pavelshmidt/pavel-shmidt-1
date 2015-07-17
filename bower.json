@@ -1,0 +1,9 @@
+{
+  "name": "07-2015-pavel-shmidt-1",
+  "versiaon": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "reset-css": "~2.0.2011012602"
+  }
+}

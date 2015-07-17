@@ -1,0 +1,206 @@
+/* Config */
+/* end Config */
+.container {
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 980px;
+  height: 100%; }
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+ul {
+  margin-left: 0;
+  padding-left: 0; }
+
+.body {
+  background: url(../img/comppattern2.png); }
+
+.header {
+  margin-bottom: 40px;
+  padding: 35px 0;
+  background: url(../img/header-line.png) no-repeat bottom #eff3f7;
+  background-size: 100% auto; }
+  .header__container {
+    max-width: 1200px; }
+
+.logo {
+  float: left; }
+
+.social {
+  float: right; }
+  .social__link {
+    display: inline-block;
+    background-image: url(../img/sprite-ic.png);
+    background-repeat: no-repeat;
+    width: 47px;
+    height: 47px;
+    margin-right: 15px; }
+    .social__link_vk {
+      background-position: -141px -47px; }
+      .social__link_vk:hover {
+        background-position: -109px -94px; }
+    .social__link_tw {
+      background-position: -62px -94px; }
+      .social__link_tw:hover {
+        background-position: -150px 0; }
+    .social__link_fb {
+      background-position: -62px 0; }
+      .social__link_fb:hover {
+        background-position: 0 -47px; }
+    .social__link_git {
+      background-position: -47px -47px; }
+      .social__link_git:hover {
+        background-position: -94px -47px; }
+
+.sidebar {
+  float: left; }
+
+.nav {
+  margin-bottom: 25px;
+  max-width: 250px;
+  background: #eff3f7;
+  border-radius: 3px;
+  overflow: hidden;
+  color: #959aa8;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 21px; }
+  .nav__link {
+    display: block;
+    padding: 28px;
+    transition: 0.3s;
+    background: url(../img/nav-line.png) no-repeat bottom;
+    background-size: 80% auto; }
+    .nav__link:hover {
+      color: #3ba8c0; }
+    .nav__link:last-child {
+      background: none; }
+    .nav__link_active {
+      background: #3ba8c0;
+      color: #fff; }
+      .nav__link_active:hover {
+        color: #fff; }
+
+.contacts {
+  max-width: 250px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 21px;
+  color: #000; }
+  .contacts__title {
+    padding: 15px 20px 15px 15px;
+    background: #3ba8c0; }
+  .contacts__item {
+    padding: 15px 15px 15px 80px;
+    background: url(../img/sprite-ic.png) no-repeat left center; }
+    .contacts__item:nth-child(2) {
+      background: #41b9d4;
+      background-position: -109px -23px; }
+    .contacts__item:nth-child(3) {
+      background: #48cbe8;
+      background-position: -41px -94px; }
+    .contacts__item:nth-child(4) {
+      background: #51daf8;
+      background-position: -20px -94px; }
+  .contacts__link {
+    font-size: 17px; }
+    .contacts__link:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+
+.contant {
+  float: right; }
+
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-ic-bag {
+  width: 36px;
+  height: 34px;
+  background-position: 0 0; }
+
+.sprite-ic-doc {
+  width: 26px;
+  height: 32px;
+  background-position: -36px 0; }
+
+.sprite-ic-fb {
+  width: 47px;
+  height: 47px;
+  background-position: -62px 0; }
+
+.sprite-ic-fb-active {
+  width: 47px;
+  height: 47px;
+  background-position: 0 -47px; }
+
+.sprite-ic-git {
+  width: 47px;
+  height: 47px;
+  background-position: -47px -47px; }
+
+.sprite-ic-git-active {
+  width: 47px;
+  height: 47px;
+  background-position: -94px -47px; }
+
+.sprite-ic-hat {
+  width: 41px;
+  height: 23px;
+  background-position: -109px 0; }
+
+.sprite-ic-lock {
+  width: 20px;
+  height: 32px;
+  background-position: 0 -94px; }
+
+.sprite-ic-mail {
+  width: 21px;
+  height: 16px;
+  background-position: -109px -23px; }
+
+.sprite-ic-skype {
+  width: 21px;
+  height: 20px;
+  background-position: -20px -94px; }
+
+.sprite-ic-tel {
+  width: 21px;
+  height: 20px;
+  background-position: -41px -94px; }
+
+.sprite-ic-tw {
+  width: 47px;
+  height: 47px;
+  background-position: -62px -94px; }
+
+.sprite-ic-tw-active {
+  width: 47px;
+  height: 47px;
+  background-position: -150px 0; }
+
+.sprite-ic-vk {
+  width: 47px;
+  height: 47px;
+  background-position: -141px -47px; }
+
+.sprite-ic-vk-active {
+  width: 47px;
+  height: 47px;
+  background-position: -109px -94px; }
