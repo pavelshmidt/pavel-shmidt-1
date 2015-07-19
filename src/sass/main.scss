@@ -1,11 +1,15 @@
 @import "_main-elements.scss";
+html {
+  height: 100%;
+}
 .body {
+  height: 100%;
   background: url(../img/comppattern2.png);
   font-family: 'Fira Sans', sans-serif;
 }
 .header {
   margin-bottom: 40px;
-  padding: 35px 0;
+  padding: 33px 0;
   background: url(../img/header-line.png) no-repeat bottom #eff3f7;
   background-size: 100% auto;
   //border-image: url(../img/header-line.png) 0 0 3 0 stretch;
@@ -24,7 +28,7 @@
     background-repeat: no-repeat;
     width: 47px;
     height: 47px;
-    margin-right: 15px;
+    margin-left: 20px;
     &_vk {
       background-position: -141px -47px;
       &:hover {
@@ -53,10 +57,11 @@
 }
 .sidebar {
   float: left;
+  margin-right: 60px;
 }
 .nav {
   margin-bottom: 25px;
-  max-width: 250px;
+  width: 250px;
   background: #eff3f7;
   border-radius: 3px;
   overflow: hidden;
@@ -66,10 +71,12 @@
   font-size: 21px;
   &__link {
     display: block;
-    padding: 28px;
+    padding:0 28px;
+    height: 73px;
     transition: 0.3s;
     background: url(../img/nav-line.png) no-repeat bottom;
     background-size: 80% auto;
+    line-height: 73px;
     &:hover {
       color: #3ba8c0;
     }
@@ -94,12 +101,14 @@
   color: #fff;
   &__title {
     // height: 40px;
-    padding: 15px 20px;
+    height: 40px;
+    line-height: 40px;
+    padding:0 20px;
     // line-height: 40px;
     background: #3ba8c0;
   }
   &__item {
-    padding-left: 20px;
+    padding-left: 43px;
     //padding: 15px 15px 15px 40px;
     height: 40px;
     line-height: 40px;
@@ -188,18 +197,19 @@
 }
 //end icons
 .contant {
-  float: right;
+  float: left;
 }
 .con-it {
   max-width: 650px;
   margin-bottom: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-left: 55px;
   background: #eff3f7;
   border-radius: 3px;
   overflow: hidden;
   &__photo {
     float: left;
+    margin-top: 10px;
     margin-right: 25px;
     // margin-left: 55px;
     width: 150px;
@@ -208,10 +218,11 @@
     border: 5px solid #3ba8c0;
   }
   &__title {
+    //
     position: relative;
     margin-left: -55px;
-    margin-bottom: 25px;
-    padding: 20px;
+    margin-bottom: 24px;
+    padding: 21px;
     color: #3ba8c0;
     font-size: 27px;
     &::after {
@@ -220,7 +231,7 @@
       left: -55px;
       bottom: 0;
       display: block;
-      width: 58%;
+      width: 68%;
       height: 2px;
       background: #3ba8c0;
     }
@@ -232,14 +243,14 @@
     font-size: 17px;
     color: #4a545d;
     &__item {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       &:last-child {
         margin-bottom: 0;
       }
       &_bold {
         float: left;
         font-weight: bold;
-        margin-right: 20px;
+        margin-right: 18px;
       }
     }
     &__skills {
@@ -249,8 +260,8 @@
     }
     &__skill {
       display: inline-block;
-      padding: 5px 12px;
-      margin-bottom: 10px;
+      padding: 2px 13px;
+      margin-bottom: 7px;
       border-radius: 2px;
       text-align: center;
       line-height: 18px;
@@ -270,8 +281,8 @@
       &__ic {
         float: left;
         width: 41px;
-        margin-right: 27px;
-        margin-top: 5px;
+        margin-right: 28px;
+        margin-top: 2px;
         text-align: center;
       }
       &__title {
@@ -284,5 +295,24 @@
         float: left;
       }
     }
+  }
+}
+.main {
+  margin-bottom: 90px;
+}
+.footer {
+  height: 90px;
+  margin-top: -90px;
+  background: url(../img/header-line.png) no-repeat top #eff3f7;
+  line-height: 90px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 13px;
+  color: #4a545d;
+  &__lock {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
   }
 }
