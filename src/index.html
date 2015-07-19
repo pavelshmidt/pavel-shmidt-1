@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/all.css">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="http://softschool.ru"><img src="img/logo.png" alt="loft School" class="logo"></a>
         <nav class="social">
@@ -16,25 +16,88 @@
           <a href="#" class="social__link social__link_git"></a>
         </nav>
       </div>
-    </div>
-    <div class="main">
+    </header>
+    <main class="main">
       <div class="container">
-        <div class="sidebar">
+        <aside class="sidebar">
           <div class="nav">
             <a href="#" class="nav__link nav__link_active">Обо мне</a>
             <a href="#" class="nav__link">Мои Работы</a>
             <a href="#" class="nav__link">Связаться со мной</a>
           </div>
-          <ul class="contacts">
-            <li class="contacts__title">Контакты</li>
-            <li class="contacts__item"><a href="#" class="contacts__link">pochta@yandex.ru</a></li>
-            <li class="contacts__item"><a href="#" class="contacts__link">+7911592643</a></li>
-            <li class="contacts__item"><a href="#" class="contacts__link">pavelshkaliningrad</a></li>
-          </ul>
-        </div>
-        <div class="contant">123</div>
+          <address class="contacts">
+            <div class="contacts__title">Контакты</div>
+            <div class="contacts__item"><i class="sprite sprite-ic-mail contacts__item__ic"></i><a href="mailto:pochta@email.ru" class="contacts__link">pochta@yandex.ru</a></div>
+            <div class="contacts__item"><i class="sprite sprite-ic-tel contacts__item__ic"></i><a href="tel:+7911592643" class="contacts__link">+7911592643</a></div>
+            <div class="contacts__item"><i class="sprite sprite-ic-skype contacts__item__ic"></i><a href="skype:pavelshkaliningrad" class="contacts__link">pavelshkaliningrad</a></div>
+          </address>
+        </aside>
+        <section class="contant">
+          <article class="con-it">
+            <h2 class="con-it__title">Основная информация</h2>
+            <img src="./img/photo.jpg" alt="" class="con-it__photo">
+            <ul class="con-it__desc">
+              <li class="con-it__desc__item"><div class="con-it__desc__item_bold">Меня зовут:</div>Шмидт Павел Александрович</li>
+              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Мой возраст:</div>21год</li>
+              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Мой город:</div>Калининград</li>
+              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Мой специализация:</div>Front-end</li>
+              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Ключевые навыки:</div>
+                <div class="con-it__desc__skills">
+                <div class="con-it__desc__skill">html</div>
+                <div class="con-it__desc__skill">css</div>
+                <div class="con-it__desc__skill">gulp</div>
+                <div class="con-it__desc__skill">javascript</div>
+                <div class="con-it__desc__skill">git</div>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="con-it">
+            <h2 class="con-it__title">Опыт работы</h2>
+            <ul class="con-it__list">
+              <li class="con-it__list__item">
+                <div class="con-it__list__item__ic"><i class="sprite-ic-bag sprite"></i></div>
+                <div class="con-it__list__item__punkt">
+                <div class="con-it__list__item__title">"ИП Боровицкий" - Продавец дисков</div>
+                <div class="con-it__list__item__desc">Октябрь 2012 - по настоящее время</div>
+                </div>
+              </li>
+              <li class="con-it__list__item">
+                <div class="con-it__list__item__ic"><i class="sprite-ic-bag sprite"></i></div>
+                <div class="con-it__list__item__punkt">
+                <div class="con-it__list__item__title">"ООО Системы безопастности" - Системный администратор</div>
+                <div class="con-it__list__item__desc">Июнь 2008 - Июль 2010</div>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="con-it">
+            <h2 class="con-it__title">Образование</h2>
+            <ul class="con-it__list">
+              <li class="con-it__list__item">
+                <div class="con-it__list__item__ic"><i class="sprite-ic-hat sprite"></i></div>
+                <div class="con-it__list__item__punkt">
+                <div class="con-it__list__item__title">Незаконченное высшее. СПБГУ ИТМО</div>
+                <div class="con-it__list__item__desc">Октябрь 2012 - по настоящее время</div>
+                </div>
+              </li>
+              <li class="con-it__list__item">
+                <div class="con-it__list__item__ic"><i class="sprite-ic-doc sprite"></i></div>
+                <div class="con-it__list__item__punkt">
+                <div class="con-it__list__item__title">Курсы Loftschool.ru</div>
+                <div class="con-it__list__item__desc">Ноябрь 2014 - по настоящее время</div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div class="footer">
+      <div class="container">
+        <i class="sprite-ic-lock sprite footer__lock"></i>
+        <span class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
       </div>
     </div>
-    <div class="footer"></div>
   </body>
 </html>

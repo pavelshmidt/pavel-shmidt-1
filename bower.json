@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "normalize.css": "~3.0.3",
-    "reset-css": "~2.0.2011012602"
+    "reset-css": "~2.0.2011012602",
+    "HTML5-Reset": "~2.1.2"
   }
 }
