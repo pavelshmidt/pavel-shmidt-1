@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
   <head>
-    <meta charset="utf-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=980px, initial-scale=1">
+    <!-- SEO -->
     <meta name="author" content="Pavel-Smidt">
-
-    <title>Павел Шмидт</title>
+    <!-- title -->
+    <title>Гравная страница</title>
+    <!-- ico -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- css -->
     <link rel="stylesheet" href="./css/all.css">
+    <!-- js -->
+    <script src="./bower/modernizr/modernizr.js"></script>
   </head>
   <body class="body">
+    <!--[if lt IE 8]>
+		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
+		<![endif]-->
+    <div class="wrapper">
     <header class="header">
       <div class="container header__container">
-        <a href="http://softschool.ru"><img src="img/logo.png" alt="loft School" class="logo"></a>
+        <a href="http://softschool.ru">
+          <img src="img/logo.png" alt="loft School" class="logo">
+          <span class="logo-text">loft School</span>
+        </a>
         <nav class="social">
           <a href="http://vk.com/p.shmidt" class="social__link social__link_vk"></a>
           <a href="#" class="social__link social__link_tw"></a>
@@ -25,37 +39,61 @@
     <main class="main">
       <div class="container">
         <aside class="sidebar">
-          <div class="nav">
-            <a href="#" class="nav__link nav__link_active">Обо мне</a>
-            <a href="#" class="nav__link">Мои Работы</a>
-            <a href="#" class="nav__link">Связаться со мной</a>
-          </div>
-          <address class="contacts">
-            <div class="contacts__title">Контакты</div>
-            <div class="contacts__item"><i class="sprite sprite-ic-mail contacts__item__ic"></i><a href="mailto:pochta@email.ru" class="contacts__link">pochta@yandex.ru</a></div>
-            <div class="contacts__item"><i class="sprite sprite-ic-tel contacts__item__ic"></i><a href="tel:+7911592643" class="contacts__link">+7911592643</a></div>
-            <div class="contacts__item"><i class="sprite sprite-ic-skype contacts__item__ic"></i><a href="skype:pavelshkaliningrad" class="contacts__link">pavelshkaliningrad</a></div>
+          <nav>
+            <ul class="nav">
+              <li class="nav__item nav__item_active"><a href="#" class="nav__link nav__link_no-border">Обо мне</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Мои Работы</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Связаться со мной</a></li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="contacts">
+              <li class="contacts__title">Контакты</li>
+              <li class="contacts__item contacts__item_color1"><i class="sprite sprite-ic-mail contacts__item__ic"></i><a href="mailto:pochta@email.ru" class="contacts__link">pochta@yandex.ru</a></li>
+              <li class="contacts__item contacts__item_color2"><i class="sprite sprite-ic-tel contacts__item__ic"></i><a href="tel:+7911592643" class="contacts__link">+7911592643</a></li>
+              <li class="contacts__item contacts__item_color3"><i class="sprite sprite-ic-skype contacts__item__ic"></i><a href="skype:pavelshkaliningrad" class="contacts__link">pavelshkaliningrad</a></li>
+            </ul>
           </address>
         </aside>
         <section class="contant">
           <article class="con-it">
             <h2 class="con-it__title">Основная информация</h2>
-            <img src="./img/photo.jpg" alt="" class="con-it__photo">
-            <ul class="con-it__desc">
-              <li class="con-it__desc__item"><div class="con-it__desc__item_bold">Меня зовут:</div>Шмидт Павел Александрович</li>
-              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Мой возраст:</div>21год</li>
-              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Мой город:</div>Калининград</li>
-              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Мой специализация:</div>Front-end</li>
-              <li class="con-it__desc__item"> <div class="con-it__desc__item_bold">Ключевые навыки:</div>
-                <div class="con-it__desc__skills">
-                <div class="con-it__desc__skill">html</div>
-                <div class="con-it__desc__skill">css</div>
-                <div class="con-it__desc__skill">gulp</div>
-                <div class="con-it__desc__skill">javascript</div>
-                <div class="con-it__desc__skill">git</div>
+            <div class="aboutprofile">
+              <div class="col-left">
+                <div class="aboutprofile__img-wrap">
+                    <img src="./img/photo.jpg" alt="" class="aboutprofile__photo">
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="col-right">
+                <ul class="con-it__desc">
+                  <li class="con-it__desc__item">
+                    <div class="con-it__desc__item_bold">Меня зовут:</div>
+                    <div class="con-it__desc__item__info">Шмидт Павел Александрович</div>
+                  </li>
+                  <li class="con-it__desc__item">
+                    <div class="con-it__desc__item_bold">Мой возраст:</div>
+                    <div class="con-it__desc__item__info">21год</div>
+                  </li>
+                  <li class="con-it__desc__item">
+                    <div class="con-it__desc__item_bold">Мой город:</div>
+                    <div class="con-it__desc__item__info">Калининград</div>
+                  </li>
+                  <li class="con-it__desc__item">
+                    <div class="con-it__desc__item_bold">Мой специализация:</div>
+                    <div class="con-it__desc__item__info">Front-end</div></li>
+                  <li class="con-it__desc__item">
+                    <div class="con-it__desc__item_bold">Ключевые навыки:</div>
+                    <div class="con-it__desc__skills">
+                      <div class="con-it__desc__skill">html</div>
+                      <div class="con-it__desc__skill">css</div>
+                      <div class="con-it__desc__skill">gulp</div>
+                      <div class="con-it__desc__skill">javascript</div>
+                      <div class="con-it__desc__skill">git</div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
           </article>
           <article class="con-it">
             <h2 class="con-it__title">Опыт работы</h2>
@@ -98,11 +136,12 @@
         </section>
       </div>
     </main>
-    <div class="footer">
+    </div>
+    <footer class="footer">
       <div class="container">
-        <i class="sprite-ic-lock sprite footer__lock"></i>
+        <a href="#" class="sprite-ic-lock sprite footer__lock"></a>
         <span class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

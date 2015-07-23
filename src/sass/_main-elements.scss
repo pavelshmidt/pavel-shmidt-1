@@ -3,7 +3,6 @@ $container-width: 980px;
 $container-flexbox: false;
 /* end Config */
 %container {
-    box-sizing: content-box;
     margin: 0 auto;
     //padding: 0 10px;
     max-width: $container-width;
@@ -28,6 +27,7 @@ $container-flexbox: false;
   @extend %clearfix;
 }
 .container {
+    position: relative;
     @extend %container;
     @extend %clearfix;
 }
@@ -41,4 +41,36 @@ a {
 }
 .bold {
   font-weight: bold;
+}
+.logo-text {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+%pos-l {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.625em;
+}
+%pos-r {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1.625em;
+}
+%pos-c {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.625em;
+   margin-left: -9.625em;
+}
+.col-left {
+  float: left;
+  @extend %clearfix;
+}
+.col-right {
+  float: right;
+  @extend %clearfix;
 }

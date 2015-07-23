@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-ic-bag {
+    width: 36px;
+    height: 34px;
+    background-position: 0 0;
+}
+
+.sprite-ic-doc {
+    width: 26px;
+    height: 32px;
+    background-position: -36px 0;
+}
+
+.sprite-ic-fb {
+    width: 47px;
+    height: 47px;
+    background-position: -62px 0;
+}
+
+.sprite-ic-fb-active {
+    width: 47px;
+    height: 47px;
+    background-position: 0 -47px;
+}
+
+.sprite-ic-git {
+    width: 47px;
+    height: 47px;
+    background-position: -47px -47px;
+}
+
+.sprite-ic-git-active {
+    width: 47px;
+    height: 47px;
+    background-position: -94px -47px;
+}
+
+.sprite-ic-hat {
+    width: 41px;
+    height: 23px;
+    background-position: -109px 0;
+}
+
+.sprite-ic-lock {
+    width: 20px;
+    height: 32px;
+    background-position: 0 -94px;
+}
+
+.sprite-ic-mail {
+    width: 21px;
+    height: 16px;
+    background-position: -109px -23px;
+}
+
+.sprite-ic-skype {
+    width: 21px;
+    height: 20px;
+    background-position: -130px -23px;
+}
+
+.sprite-ic-tel {
+    width: 21px;
+    height: 20px;
+    background-position: -20px -94px;
+}
+
+.sprite-ic-tw {
+    width: 47px;
+    height: 47px;
+    background-position: -41px -94px;
+}
+
+.sprite-ic-tw-active {
+    width: 47px;
+    height: 47px;
+    background-position: -88px -94px;
+}
+
+.sprite-ic-vk {
+    width: 47px;
+    height: 47px;
+    background-position: -151px 0;
+}
+
+.sprite-ic-vk-active {
+    width: 47px;
+    height: 47px;
+    background-position: -141px -47px;
+}
+
+.sprite-lock-active {
+    width: 20px;
+    height: 32px;
+    background-position: -135px -94px;
+}

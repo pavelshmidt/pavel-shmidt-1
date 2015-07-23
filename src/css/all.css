@@ -1,5 +1,6 @@
 @import "../bower/normalize.css/normalize.css";
 @import "../bower/reset-css/reset.css";
-@import "./font.css";
+@import "../img/stylesheet.css";
+@import "../font/stylesheet.css";
 @import "./main.css";
-@import "./font.css";
+/*@import "./font.css";*/
