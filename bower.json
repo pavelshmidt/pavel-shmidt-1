@@ -2,10 +2,11 @@
   "name": "07-2015-pavel-shmidt-1",
   "versiaon": "0.0.1",
   "dependencies": {
-    "jquery": "~2.1.4",
+    "jquery": "1.11.3",
     "normalize.css": "~3.0.3",
     "reset-css": "~2.0.2011012602",
     "HTML5-Reset": "~2.1.2",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "jquery-placeholder": "~2.1.2"
   }
 }

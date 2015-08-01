@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="ru-RU" class="html">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=980px, initial-scale=1">
-    <!-- SEO -->
-    <meta name="author" content="Pavel-Smidt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- title -->
     <title>Гравная страница</title>
+    <!-- SEO -->
+    <meta name="description" content="loft-blog">
+    <meta name="keywords" content="loft-blog">
+    <meta name="author" content="Pavel-Smidt">
     <!-- ico -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./favicon.ico">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="./css/all.css">
@@ -22,126 +23,167 @@
 		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
     <div class="wrapper">
-    <header class="header">
-      <div class="container header__container">
-        <a href="http://softschool.ru">
-          <img src="img/logo.png" alt="loft School" class="logo">
-          <span class="logo-text">loft School</span>
-        </a>
-        <nav class="social">
-          <a href="http://vk.com/p.shmidt" class="social__link social__link_vk"></a>
-          <a href="#" class="social__link social__link_tw"></a>
-          <a href="#" class="social__link social__link_fb"></a>
-          <a href="#" class="social__link social__link_git"></a>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <aside class="sidebar">
-          <nav>
-            <ul class="nav">
-              <li class="nav__item nav__item_active"><a href="#" class="nav__link nav__link_no-border">Обо мне</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Мои Работы</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Связаться со мной</a></li>
-            </ul>
-          </nav>
-          <address>
-            <ul class="contacts">
-              <li class="contacts__title">Контакты</li>
-              <li class="contacts__item contacts__item_color1"><i class="sprite sprite-ic-mail contacts__item__ic"></i><a href="mailto:pochta@email.ru" class="contacts__link">pochta@yandex.ru</a></li>
-              <li class="contacts__item contacts__item_color2"><i class="sprite sprite-ic-tel contacts__item__ic"></i><a href="tel:+7911592643" class="contacts__link">+7911592643</a></li>
-              <li class="contacts__item contacts__item_color3"><i class="sprite sprite-ic-skype contacts__item__ic"></i><a href="skype:pavelshkaliningrad" class="contacts__link">pavelshkaliningrad</a></li>
-            </ul>
-          </address>
-        </aside>
-        <section class="contant">
-          <article class="con-it">
-            <h2 class="con-it__title">Основная информация</h2>
-            <div class="aboutprofile">
-              <div class="col-left">
-                <div class="aboutprofile__img-wrap">
-                    <img src="./img/photo.jpg" alt="" class="aboutprofile__photo">
-                </div>
-              </div>
-              <div class="col-right">
-                <ul class="con-it__desc">
-                  <li class="con-it__desc__item">
-                    <div class="con-it__desc__item_bold">Меня зовут:</div>
-                    <div class="con-it__desc__item__info">Шмидт Павел Александрович</div>
+      <div class="main-content">
+        <header class="header">
+          <section class="container container_width">
+            <article class="logo__wrap">
+              <a href="http://softschool.ru" class="logo">
+                <img src="img/logo.png" alt="loft School" class="logo__img">
+                <span class="hide-text">loft School</span>
+              </a>
+            </article><!-- end logo -->
+            <nav class="social__wrap">
+              <ul class="social">
+                <li class="social__item">
+                <a href="http://vk.com/p.shmidt" class="social__link social__link_vk hide-text">vk</a>
+                </li>
+                <li class="social__item">
+                <a href="#" class="social__link social__link_tw hide-text">tw</a>
+                </li>
+                <li class="social__item">
+                <a href="#" class="social__link social__link_fb hide-text">fb</a>
+                </li>
+                <li class="social__item">
+                <a href="#" class="social__link social__link_git hide-text">git</a>
+                </li>
+              </ul>
+            </nav><!-- end social -->
+          </section>
+        </header>
+        <main class="main">
+          <section class="container">
+            <aside class="sidebar">
+              <nav class="main-nav__wrap">
+                <ul class="main-nav">
+                  <li class="main-nav__item main-nav__item_active">
+                    <a href="#" class="main-nav__link main-nav__link_no-border">Обо мне</a>
                   </li>
-                  <li class="con-it__desc__item">
-                    <div class="con-it__desc__item_bold">Мой возраст:</div>
-                    <div class="con-it__desc__item__info">21год</div>
+                  <li class="main-nav__item">
+                    <a href="./portfolio.html" class="main-nav__link">Мои работы</a>
                   </li>
-                  <li class="con-it__desc__item">
-                    <div class="con-it__desc__item_bold">Мой город:</div>
-                    <div class="con-it__desc__item__info">Калининград</div>
-                  </li>
-                  <li class="con-it__desc__item">
-                    <div class="con-it__desc__item_bold">Мой специализация:</div>
-                    <div class="con-it__desc__item__info">Front-end</div></li>
-                  <li class="con-it__desc__item">
-                    <div class="con-it__desc__item_bold">Ключевые навыки:</div>
-                    <div class="con-it__desc__skills">
-                      <div class="con-it__desc__skill">html</div>
-                      <div class="con-it__desc__skill">css</div>
-                      <div class="con-it__desc__skill">gulp</div>
-                      <div class="con-it__desc__skill">javascript</div>
-                      <div class="con-it__desc__skill">git</div>
-                    </div>
+                  <li class="main-nav__item">
+                    <a href="./contact.html" class="main-nav__link">Связаться со мной</a>
                   </li>
                 </ul>
-            </div>
-          </div>
-          </article>
-          <article class="con-it">
-            <h2 class="con-it__title">Опыт работы</h2>
-            <ul class="con-it__list">
-              <li class="con-it__list__item">
-                <div class="con-it__list__item__ic"><i class="sprite-ic-bag sprite"></i></div>
-                <div class="con-it__list__item__punkt">
-                <div class="con-it__list__item__title">"ИП Боровицкий" - Продавец дисков</div>
-                <div class="con-it__list__item__desc">Октябрь 2012 - по настоящее время</div>
-                </div>
-              </li>
-              <li class="con-it__list__item">
-                <div class="con-it__list__item__ic"><i class="sprite-ic-bag sprite"></i></div>
-                <div class="con-it__list__item__punkt">
-                <div class="con-it__list__item__title">"ООО Системы безопастности" - Системный администратор</div>
-                <div class="con-it__list__item__desc">Июнь 2008 - Июль 2010</div>
-                </div>
-              </li>
-            </ul>
-          </article>
-          <article class="con-it">
-            <h2 class="con-it__title">Образование</h2>
-            <ul class="con-it__list">
-              <li class="con-it__list__item">
-                <div class="con-it__list__item__ic"><i class="sprite-ic-hat sprite"></i></div>
-                <div class="con-it__list__item__punkt">
-                <div class="con-it__list__item__title">Незаконченное высшее. СПБГУ ИТМО</div>
-                <div class="con-it__list__item__desc">Октябрь 2012 - по настоящее время</div>
-                </div>
-              </li>
-              <li class="con-it__list__item">
-                <div class="con-it__list__item__ic"><i class="sprite-ic-doc sprite"></i></div>
-                <div class="con-it__list__item__punkt">
-                <div class="con-it__list__item__title">Курсы Loftschool.ru</div>
-                <div class="con-it__list__item__desc">Ноябрь 2014 - по настоящее время</div>
-                </div>
-              </li>
-            </ul>
-          </article>
-        </section>
-      </div>
-    </main>
-    </div>
+              </nav><!-- end main nav -->
+              <address class="contacts__wrap">
+                <ul class="contacts">
+                  <li class="contacts__item contacts__item_color4">Контакты</li>
+                  <li class="contacts__item contacts__item_color1">
+                    <i class="sprite sprite-ic-mail contacts__item__ic"></i>
+                    <a href="mailto:pochta@email.ru" class="contacts__link">pochta@yandex.ru</a></li>
+                  <li class="contacts__item contacts__item_color2"><i class="sprite sprite-ic-tel contacts__item__ic"></i><a href="tel:+7911592643" class="contacts__link">+7911592643</a></li>
+                  <li class="contacts__item contacts__item_color3"><i class="sprite sprite-ic-skype contacts__item__ic"></i><a href="skype:pavelshkaliningrad" class="contacts__link">pavelshkaliningrad</a></li>
+                </ul>
+              </address><!-- end contacts -->
+            </aside>
+            <section class="contant">
+              <article class="about">
+                <h2 class="about__title">Основная информация</h2>
+                <section class="aboutprofile">
+                  <div class="col-left">
+                    <article class="avatar__wrap">
+                      <div class="avatar">
+                          <img src="./img/photo.jpg" alt="" class="avatar__img">
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-right">
+                    <div class="basic-info__wrap">
+                      <ul class="basic-info">
+                        <li class="basic-info__item">
+                          <div class="basic-info__item__question">Меня зовут:</div>
+                          <div class="basic-info__item__answer basic-info__item__answer_max-width1">Шмидт Павел Александрович</div>
+                        </li>
+                        <li class="basic-info__item">
+                          <div class="basic-info__item__question">Мой возраст:</div>
+                          <div class="basic-info__item__answer basic-info__item__answer_max-width2">21 год</div>
+                        </li>
+                        <li class="basic-info__item">
+                          <div class="basic-info__item__question">Мой город:</div>
+                          <div class="basic-info__item__answer basic-info__item__answer_max-width3">Калининград</div>
+                        </li>
+                        <li class="basic-info__item">
+                          <div class="basic-info__item__question">Мой специализация:</div>
+                          <div class="basic-info__item__answer basic-info__item__answer_max-width4">Front-end</div></li>
+                        <li class="basic-info__item">
+                          <div class="basic-info__item__question">Ключевые навыки:</div>
+                          <div class="basic-info__item__answer basic-info__item__answer_max-width5">
+                            <div class="basic-info__item__skill">html</div>
+                            <div class="basic-info__item__skill">css</div>
+                            <div class="basic-info__item__skill">gulp</div>
+                            <div class="basic-info__item__skill">javascript</div>
+                            <div class="basic-info__item__skill">git</div>
+                          </div>
+                        </li>
+                      </ul><!-- basic-info -->
+                    </div>
+                  </div>
+                </section><!-- end about profile -->
+              </article><!-- end about -->
+              <article class="about">
+                <h2 class="about__title">Опыт работы</h2>
+                <div class="list-info__wrap">
+                  <ul class="list-info">
+                    <li class="list-info__item">
+                      <div class="list-info__item__ic">
+                        <i class="sprite-ic-bag sprite"></i>
+                      </div>
+                      <div class="col-left">
+                      <div class="list-info__item__title">"ИП Боровицкий" - Продавец дисков</div>
+                      <div class="list-info__item__desc">Октябрь 2012 - по настоящее время</div>
+                      </div>
+                    </li>
+                    <li class="list-info__item">
+                      <div class="list-info__item__ic">
+                        <i class="sprite-ic-bag sprite"></i>
+                      </div>
+                      <div class="col-left">
+                      <div class="list-info__item__title">"ООО Системы безопастности" - Системный администратор</div>
+                      <div class="list-info__item__desc">Июнь 2008 - Июль 2010</div>
+                      </div>
+                    </li>
+                  </ul><!-- end list-info -->
+                </div> <!-- end aboutprofile -->
+              </article><!-- end about -->
+              <article class="about">
+                <h2 class="about__title">Образование</h2>
+                <div class="list-info__wrap">
+                  <ul class="list-info">
+                    <li class="list-info__item">
+                      <div class="list-info__item__ic"><i class="sprite-ic-hat sprite"></i></div>
+                      <div class="col-left">
+                      <div class="list-info__item__title">Незаконченное высшее. СПБГУ ИТМО</div>
+                      <div class="list-info__item__desc">Октябрь 2012 - по настоящее время</div>
+                      </div>
+                    </li>
+                    <li class="list-info__item">
+                      <div class="list-info__item__ic"><i class="sprite-ic-doc sprite"></i></div>
+                      <div class="col-left">
+                      <div class="list-info__item__title">Курсы Loftschool.ru</div>
+                      <div class="list-info__item__desc">Ноябрь 2014 - по настоящее время</div>
+                      </div>
+                    </li>
+                  </ul><!-- end list-info -->
+                </div><!-- end aboutprofile -->
+              </article><!-- end about -->
+            </section><!-- end content -->
+          </section><!-- end container -->
+        </main><!-- end main -->
+      </div><!-- end main-content -->
+    </div><!-- end wrapper -->
     <footer class="footer">
       <div class="container">
-        <a href="#" class="sprite-ic-lock sprite footer__lock"></a>
-        <span class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+        <div class="lock__wrap">
+          <a href="./login.html" class="sprite-ic-lock sprite lock"></a>
+        </div>
+        <div class="copyright__wrap">
+          <span class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+        </div>
       </div>
     </footer>
+    <!-- //  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    //  <script>window.jQuery || document.write('<script src="./bower/jquery/dist/jquery.min.js"><\/script>')</script>
+    //  <script src="./js/main.js"></script> -->
   </body>
 </html>

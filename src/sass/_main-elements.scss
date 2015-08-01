@@ -1,5 +1,5 @@
 /* Config */
-$container-width: 980px;
+$container-width: 960px;
 $container-flexbox: false;
 /* end Config */
 %container {
@@ -42,9 +42,9 @@ a {
 .bold {
   font-weight: bold;
 }
-.logo-text {
-  display: inline-block;
-  overflow: hidden;
+.hide-text {
+   display: inline-block;
+  // overflow: hidden;
   text-indent: -9999px;
 }
 %pos-l {
@@ -66,11 +66,27 @@ a {
   margin-top: -1.625em;
    margin-left: -9.625em;
 }
+%word-wrap {
+  display: block;
+  white-space: pre;           /* CSS 2.0 */
+white-space: pre-wrap;      /* CSS 2.1 */
+white-space: pre-line;      /* CSS 3.0 */
+white-space: -pre-wrap;     /* Opera 4-6 */
+white-space: -o-pre-wrap;   /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap;  /* HP Printers */
+word-wrap: break-word;      /* IE 5+ */
+}
 .col-left {
   float: left;
   @extend %clearfix;
 }
 .col-right {
   float: right;
+  @extend %clearfix;
+}
+.wrap {
+  position: relative;
+  display: block;
   @extend %clearfix;
 }

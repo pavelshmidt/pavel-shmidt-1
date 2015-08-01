@@ -1,0 +1,367 @@
+/* Config */
+/* end Config */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100%;
+}
+
+.clearfix:before, .container:before, .col-left:before, .col-right:before, .wrap:before, .aboutprofile:before, .basic-info__item:before, .list-info__item:before, .contact__wrap-element:before, .clearfix:after, .container:after, .col-left:after, .col-right:after, .wrap:after, .aboutprofile:after, .basic-info__item:after, .list-info__item:after, .contact__wrap-element:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .container:after, .col-left:after, .col-right:after, .wrap:after, .aboutprofile:after, .basic-info__item:after, .list-info__item:after, .contact__wrap-element:after {
+  clear: both;
+}
+
+.container {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hide-text {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.col-left {
+  float: left;
+}
+
+.col-right {
+  float: right;
+}
+
+.wrap {
+  position: relative;
+  display: block;
+}
+
+.contant {
+  width: 650px;
+  float: right;
+}
+
+.aboutprofile {
+  padding-bottom: 45px;
+  padding-left: 55px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #3ba8c0;
+  overflow: hidden;
+}
+
+.avatar__wrap {
+  margin-top: 12px;
+}
+
+.avatar__img {
+  width: 100%;
+}
+
+.basic-info {
+  width: 410px;
+  font-size: 17px;
+  color: #4a545d;
+}
+
+.basic-info__wrap {
+  padding-right: 11px;
+}
+
+.basic-info__item {
+  margin-bottom: 16px;
+}
+
+.basic-info__item:last-child {
+  margin-bottom: 0;
+}
+
+.basic-info__item__question {
+  float: left;
+  margin-right: 19px;
+  font-family: "FiraSans-Medium";
+}
+
+.basic-info__item__answer {
+  font-size: 15px;
+  float: left;
+}
+
+.basic-info__item__answer_max-width1 {
+  max-width: 280px;
+}
+
+.basic-info__item__answer_max-width2 {
+  max-width: 245px;
+}
+
+.basic-info__item__answer_max-width3 {
+  max-width: 280px;
+}
+
+.basic-info__item__answer_max-width4 {
+  max-width: 200px;
+}
+
+.basic-info__item__answer_max-width5 {
+  max-width: 225px;
+}
+
+.basic-info__item__skill {
+  display: inline-block;
+  min-width: 40px;
+  padding: 0 13px;
+  margin-bottom: 7px;
+  border-radius: 4px;
+  text-align: center;
+  background: linear-gradient(to bottom, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 100%);
+  font: 14px "ProximaNova-Semi";
+  line-height: 19px;
+  color: #fff;
+  cursor: default;
+}
+
+.about {
+  max-width: 650px;
+  margin-bottom: 25px;
+  background: #eff3f7;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.about__title {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 22px;
+  padding: 20px;
+  border-bottom: 2px solid #3ba8c0;
+  color: #3ba8c0;
+  font-size: 27px;
+}
+
+.about__title-contact {
+  display: block;
+  padding: 42px 0;
+  background: #48cbe8;
+  border-radius: 3px 3px 0px 0px;
+  border-bottom: 17px solid #67dffa;
+  text-align: center;
+  font: 27px "FiraSans-Book";
+  color: #fff;
+}
+
+.list-info {
+  font: 17px "Fira Sans";
+  color: #4a545d;
+}
+
+.list-info__wrap {
+  padding-bottom: 23px;
+  padding-left: 55px;
+}
+
+.list-info__item {
+  position: relative;
+  padding-left: 68px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.list-info__item__ic {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -17px;
+  display: block;
+  width: 41px;
+  text-align: center;
+}
+
+.list-info__item__title {
+  font-weight: bold;
+}
+
+.list-info__item__desc {
+  font-family: "FiraSans-Light";
+}
+
+.portfolio__wrap {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.portfolio__item {
+  display: inline-block;
+  width: 183px;
+  height: 195px;
+  margin-right: 25px;
+  margin-bottom: 46px;
+  vertical-align: top;
+}
+
+.portfolio__item_margin {
+  margin-right: 0;
+}
+
+.portfolio__item__picture {
+  position: relative;
+  display: block;
+  width: 183px;
+  height: 130px;
+  margin-bottom: 6px;
+  border: 2px solid #3ba8c0;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.portfolio__item__picture__img {
+  width: 100%;
+}
+
+.portfolio__item__picture_border {
+  border: none;
+}
+
+.portfolio__item__link {
+  display: block;
+  margin-bottom: 10px;
+  font: 13px "FiraSans-LightItalic";
+  color: #3ba8c0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.portfolio__item__desc {
+  height: 37px;
+  font: 15px "FiraSans-Light";
+  text-align: center;
+  color: #4a545d;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.main {
+  margin-bottom: 14px;
+}
+
+.footer {
+  min-width: 970px;
+  height: 90px;
+  margin-top: -90px;
+  background: url(../img/header-line.png) no-repeat top #eff3f7;
+  text-align: center;
+}
+
+.lock__wrap {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  margin-top: -17px;
+}
+
+.lock:hover {
+  background-position: -135px -94px;
+}
+
+.copyright {
+  font: 13px "FiraSans-Light";
+  color: #4a545d;
+}
+
+.copyright__wrap {
+  margin-top: 33px;
+}
+
+.contact__wrap {
+  margin: 42px auto;
+  width: 400px;
+}
+
+.contact__wrap-element {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.contact__wrap-element_margin {
+  margin-bottom: 19px;
+}
+
+.contact__title {
+  margin-bottom: 1px;
+  font: 19px "FiraSans-Light";
+  color: #959aa8;
+}
+
+.contact__main-style {
+  border: 1px solid #48cbe8;
+  border-radius: 3px;
+  padding: 0 10px;
+  font: 13px "FiraSans-Light";
+}
+
+.contact__name {
+  width: 192px;
+  height: 41px;
+}
+
+.contact__email {
+  width: 192px;
+  height: 41px;
+}
+
+.contact__message {
+  padding: 15px 10px;
+  width: 400px;
+  height: 182px;
+  resize: none;
+}
+
+.contact__capcha {
+  background: #fff;
+  width: 190px;
+  height: 80px;
+}
+
+.contact__kod {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  width: 192px;
+  height: 35px;
+}
+
+.contact__button {
+  border-radius: 4px;
+  border: none;
+  background: #48cbe8;
+  width: 137px;
+  height: 33px;
+  font: 19px "FiraSans-Book";
+  color: #fff;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact__button_bg {
+  background: #849db5;
+}
