@@ -7,6 +7,8 @@
     "reset-css": "~2.0.2011012602",
     "HTML5-Reset": "~2.1.2",
     "modernizr": "~2.8.3",
-    "jquery-placeholder": "~2.1.2"
+    "jquery-placeholder": "~2.1.2",
+    "bpopup": "~0.11.0",
+    "qtip2": "~2.2.1"
   }
 }

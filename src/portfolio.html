@@ -127,33 +127,47 @@
                       <p class="portfolio__item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </li>
                     <li class="portfolio__item">
-                      <a href="#" class="portfolio__item__picture portfolio__item__picture_border">
+                      <a href="#" class="portfolio__item__add-project portfolio__item__picture portfolio__item__picture_border">
                         <img src="./img/add-project.png" alt="" class="portfolio__item__picture__img">
                       </a>
                     </li>
                   </ul>
                 </div><!-- end portfolio -->
               </div><!-- end about -->
-              <div class="add-progect__all-wrap">
-              <div class="about about_add-project" id="add-progect">
-                <h2 class="about__title-contact about__title-contact_add-project">Добавление проекта</h2>
-                <div class="add-progect__wrap">
-                  <form action="#" class="add-progect">
-                    <label for="add-progect_name" class="contact__title add-progect__title">Название проекта</label>
-                    <input type="text" class="add-progect__item add-progect__name contact__main-style" placeholder="Введите название">
-                    <label for="add-progect_file" class="contact__title add-progect__title">Картинка проекта</label>
-                    <div class="add-progect__item contact__main-style add-progect__file_wrap">
-                      <input type="file" class="add-progect__file" placeholder="Загрузите изображение">
-                    </div>
-                    <label for="add-progect_url" class="add-progect__title contact__title">URL проекта</label>
-                    <input type="text" class="add-progect__item add-progect__url contact__main-style" placeholder="Добавте ссылку">
-                    <label for="add-progect_desc" class="add-progect__title contact__title">Описание</label>
-                    <textarea name="name" class="add-progect__item add-progect__desc contact__main-style" placeholder="Пара слов о Вашем проекте"></textarea>
-                    <button type="submit" class="add-progect__item add-progect__add contact__button">Добавить</button>
-                  </form>
+              <div id="add-progect-popup">
+                <div class="about about_add-project" id="add-progect">
+                  <h2 class="about__title-contact about__title-contact_add-project">Добавление проекта</h2>
+                  <div class="add-progect__wrap">
+                    <form action="#" class="add-progect">
+                      <img src="./img/close.png" alt="" class="add-progect__close">
+                      <div class="add-progect__error">
+                        <div class="add-progect__error__title">Ошибка!</div>
+                        <div class="add-progect__error__desc">Невозможно добавить проект.</div>
+                        <img src="./img/close-error.png" alt="" class="add-progect__error__close">
+                      </div>
+                      <div class="add-progect__add-window">
+                        <div class="add-progect__add-window__title">Ура!</div>
+                        <div class="add-progect__add-window__descr">Проект успешно добавлен.</div>
+                        <img src="./img/close-add-window.png" alt="" class="add-progect__add-window__close">
+                      </div>
+                      <label for="add-progect_name" class="contact__title add-progect__title">
+                        Название проекта
+                      </label>
+                      <input name="name" type="text" id="name" class="add-progect__item add-progect__name contact__main-style" placeholder="Введите название" title="Вы не ввели имя">
+                      <label for="add-progect_file" class="contact__title add-progect__title">Картинка проекта</label>
+                      <div class="add-progect__item contact__main-style add-progect__file_wrap">
+                        <input type="file" name="fileUrl" class="add-progect__file" placeholder="Загрузите изображение">
+                        <span class="add-progect__file__placeholder">Загрузите изображение</span>
+                      </div>
+                      <label for="add-progect_url" class="add-progect__title contact__title">URL проекта</label>
+                      <input name="url" type="text" class="add-progect__item add-progect__url contact__main-style" placeholder="Добавте ссылку">
+                      <label for="add-progect_desc" class="add-progect__title contact__title">Описание</label>
+                      <textarea name="desc" class="add-progect__item add-progect__desc contact__main-style" placeholder="Пара слов о Вашем проекте"></textarea>
+                      <button type="submit" class="add-progect__item add-progect__add contact__button">Добавить</button>
+                    </form>
+                  </div>
                 </div>
-              </div>
-              </div>
+              </div><!-- add-progect -->
             </section><!-- end content -->
           </section><!-- end container -->
         </main><!-- end main -->
@@ -172,7 +186,10 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./bower/jquery/dist/jquery.min.js"><\/script>')</script>
-    <script src="./bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <!-- // <script src="./bower/jquery-placeholder/jquery.placeholder.min.js"></script> -->
+    <script src="./bower/bpopup/jquery.bpopup.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/main2.js"></script>
   </body>
 </html>
