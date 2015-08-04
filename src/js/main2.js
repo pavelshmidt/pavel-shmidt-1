@@ -1,14 +1,15 @@
 var myModyle = function () {
+  // Инициализация
   var init = function () {
     _setUpListners();
   };
-
+  // Прослушка событий
   var _setUpListners = function () {
     $(".portfolio__item__add-project").on('click', _showModal);
     $(".add-progect__close").on('click', _closeModal);
     $(".add-progect").on('submit', _addProject);
   }
-
+  //Работа с модальным окном
   var _showModal = function (event) {
     event.preventDefault();
     AddProgectPopup = $('#add-progect-popup').bPopup({
@@ -22,26 +23,28 @@ var myModyle = function () {
       }
     });
   }
-
+  // Закрытие модального окна
   var _closeModal = function () {
     AddProgectPopup.close();
   }
-
+  // Добавление проекта
   var _addProject = function (event) {
     event.preventDefault();
     //Обьявляем переменные
     var form = $(this),
         url = "js/add_progect.php",
-        data = form.serialize();
+        myServer = _ajaxForm(form,url);
+        //data = form.serialize();
+
     console.log(data);
     //Запрос на сервер
-    $.ajax({
-      url: url,
-      type: 'POST',
-      dataType: 'json',
-      data: data
-    })
-    .done(function(ans) {
+    // $.ajax({
+    //   url: url,
+    //   type: 'POST',
+    //   dataType: 'json',
+    //   data: data
+    // })
+    myServer.done(function(ans) {
       console.log(ans);
       console.log("success");
       if (ans.status === 'ok') {
@@ -53,21 +56,34 @@ var myModyle = function () {
         form.find('.add-progect__add-window').hide();
       }
     })
-    .fail(function() {
-      console.log("error");
-    })
-    .always(function() {
-      console.log("complete");
-    });
+    // .fail(function() {
+    //   console.log("error");
+    // })
+    // .always(function() {
+    //   console.log("complete");
+    // });
 
   }
-
-  var _ajaxForm = function () {
-
+  // Универсальная функция
+  // 1.собирает данные из формы
+  // 2.проверяет форму
+  // 3.делает запрос на сервер и возвращает запрос с сервера
+  var _ajaxForm = function (form,url) {
     // if (!valid) {
     //   return false;
     // }
-    
+
+    data = form.serialize();
+
+    var result = $.ajax({
+      url: url,
+      type: 'POST',
+      dataType: 'json',
+      data: data
+    }).fail (function (ans) {
+      console.log('ERRROR!!!!');
+    })
+    return result;
   }
   return {
     init:init
