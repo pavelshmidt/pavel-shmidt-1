@@ -51,7 +51,7 @@ var myModyle = function () {
   // 2.проверяет форму
   // 3.делает запрос на сервер и возвращает запрос с сервера
   var _ajaxForm = function (form,url) {
-    // if (!valid) {
+    if (!valid.validateForm(form)) return false;
     //   return false;
     // }
 
