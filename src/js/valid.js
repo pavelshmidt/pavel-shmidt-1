@@ -46,13 +46,16 @@ var valid = function () {
       },
       position : position,
       style: {
-        classes: 'qtip-red'
-      }
+                classes: 'qtip-mystyle',
+                tip: {
+                    height: 15,
+                    width: 15
+                }
+            }
     }).trigger('show');
   };
   //Валидация формы
   var validateForm = function (form) {
-    console.log('В модуле валидации');
     var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
         valid = true;
       $.each(elements, function (index, val) {
@@ -61,12 +64,18 @@ var valid = function () {
             pos = element.attr('qtip-position');
 
         if (val.length === 0) {
+          _createWindowError(form);
           _createQtip(element, pos);
           element.addClass('form-style_error');
           valid = false;
         }
       });
     return valid;
+  }
+  //Создание сообщения с ошибкой
+  var _createWindowError = function (form) {
+    form.find('.add-progect__error').show();
+    form.find('.add-progect__add-window').hide();
   }
   //Возвращаемый модуль
   return {

@@ -145,24 +145,30 @@
                         <div class="add-progect__error__desc">Невозможно добавить проект.</div>
                         <img src="./img/close-error.png" alt="" class="add-progect__error__close">
                       </div>
-                      <div class="add-progect__add-window">
+                      <div class="add-progect__add-window" id="FormGoodValid">
                         <div class="add-progect__add-window__title">Ура!</div>
                         <div class="add-progect__add-window__descr">Проект успешно добавлен.</div>
                         <img src="./img/close-add-window.png" alt="" class="add-progect__add-window__close">
                       </div>
-                      <label for="add-progect_name" class="contact__title add-progect__title">
-                        Название проекта
+                      <label>
+                        <div class="contact__title add-progect__title">Название проекта</div>
+                        <input name="name" type="text" id="name" class="add-progect__item add-progect__name contact__main-style" placeholder="Введите название" qtip-content="Введите название" qtip-position='left'>
                       </label>
-                      <input name="name" type="text" id="name" class="add-progect__item add-progect__name contact__main-style" placeholder="Введите название" qtip-content="Вы не ввели имя" qtip-position='left'>
-                      <label for="add-progect_file" class="contact__title add-progect__title">Картинка проекта</label>
-                      <div class="add-progect__item contact__main-style add-progect__file_wrap">
-                        <input type="file" name="fileUrl" class="add-progect__file" placeholder="Загрузите изображение">
-                        <span class="add-progect__file__placeholder">Загрузите изображение</span>
-                      </div>
-                      <label for="add-progect_url" class="add-progect__title contact__title">URL проекта</label>
-                      <input name="url" type="text" class="add-progect__item add-progect__url contact__main-style" placeholder="Добавте ссылку" qtip-content="Вы не ввели url" qtip-position='left'>
-                      <label for="add-progect_desc" class="add-progect__title contact__title">Описание</label>
-                      <textarea name="desc" class="add-progect__item add-progect__desc contact__main-style" placeholder="Пара слов о Вашем проекте" qtip-content="Вы не ввели описание" qtip-position='left'></textarea>
+                      <label>
+                        <div for="add-progect_file" class="contact__title add-progect__title">Картинка проекта</div>
+                        <div class="add-progect__file_wrap">
+                          <input type="text" name="fileUrl" class="add-progect__filetext add-progect__item contact__main-style" placeholder="Загрузите изображение" qtip-content="Картинка" qtip-position='left'readonly="">
+                          <input type="file" name="file" class="add-progect__file">
+                        </div>
+                      </label>
+                      <label>
+                        <div for="add-progect_url" class="add-progect__title contact__title">URL проекта</div>
+                        <input name="url" type="text" class="add-progect__item add-progect__url contact__main-style" placeholder="Добавте ссылку" qtip-content="Сслыка на проект" qtip-position='left'>
+                      </label>
+                      <label>
+                        <div for="add-progect_desc" class="add-progect__title contact__title">Описание</div>
+                        <textarea name="desc" class="add-progect__item add-progect__desc contact__main-style" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта" qtip-position='left'></textarea>
+                      </label>
                       <button type="submit" class="add-progect__item add-progect__add contact__button">Добавить</button>
                     </form>
                   </div>
@@ -189,9 +195,9 @@
     <!-- // <script src="./bower/jquery-placeholder/jquery.placeholder.min.js"></script> -->
     <script src="./bower/bpopup/jquery.bpopup.min.js"></script>
     <script src="./bower/qtip2/jquery.qtip.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/main2.js"></script>
+    <script src="./js/add_project.js"></script>
     <script src = './js/valid.js'></script>
-    <script src = './js/contactme.js'></script>
+    <script src = './js/hover.js'></script>
+    <!-- // <script src = './js/contactme.js'></script> -->
   </body>
 </html>

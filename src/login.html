@@ -24,11 +24,15 @@
         <article class="about about_shadow">
             <h2 class="about__title-contact about__title-contact_size">Авторизируйтесь</h2>
             <div class="authorization__wrap">
-              <form action="#" class="authorization">
-                <div class="contact__title contact__title_center">Логин</div>
-                <input type="text" class="authorization__login contact__main-style" placeholder="Введите логин">
-                <div class="contact__title contact__title_center">Пароль</div>
-                <input type="text" class="authorization__password contact__main-style" placeholder="Введите пароль">
+              <form action="#" class="authorization" id="Form-authorization">
+                <label>
+                  <div class="contact__title contact__title_center">Логин</div>
+                  <input type="text" class="authorization__login contact__main-style" placeholder="Введите логин" qtip-content="Введите логин" qtip-position='left'>
+                </label>
+                <label>
+                  <div class="contact__title contact__title_center">Пароль</div>
+                  <input type="text" class="authorization__password contact__main-style" placeholder="Введите пароль" qtip-content="Введите пароль" qtip-position='left'>
+                </label>
                 <button class="contact__button contact__button_size" type="submit" name="button">Войти</button>
               </form>
             </div>
@@ -48,5 +52,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="./bower/jquery/dist/jquery.min.js"><\/script>')</script>
  <!-- //  <script src="./bower/jquery-placeholder/jquery.placeholder.min.js"></script> -->
-  <script src="./js/main.js"></script>
+ <script src="./bower/bpopup/jquery.bpopup.min.js"></script>
+ <script src="./bower/qtip2/jquery.qtip.min.js"></script>
+ <script src="./js/add_project.js"></script>
+ <script src = './js/valid.js'></script>
+ <script src = './js/hover.js'></script>
+ <script src = './js/login.js'></script>
   </body>

@@ -5,7 +5,7 @@ var contactme = function () {
   };
   //Прослушка события
   var _setUpListners = function () {
-    $('.add-progect').on('submit', _submitForm);
+    $('#form-contactme').on('submit', _submitForm);
   }
   var _submitForm = function (event) {
     event.preventDefault();

@@ -81,30 +81,32 @@
               <div class="about">
                 <h2 class="about__title-contact">У вас интересный проект? Напишите мне</h2>
                 <div class="contact__wrap">
-                  <form action="#" id="contact" method="post">
+                  <form action="#" id="form-contactme" method="post">
                     <div class="contact__wrap-element">
-                      <div class="col-left">
+                      <label class="col-left">
                         <div class="contact__title">Имя</div>
-                        <input type="text" name="name" class="contact__name contact__main-style" placeholder="Как к Вам обращаться">
-                      </div>
-                      <div class="col-right">
+                        <input type="text" name="name" class="contact__name contact__main-style" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели Имя" qtip-position='left'>
+                      </label>
+                      <label class="col-right">
                         <div class="contact__title">Email</div>
-                        <input type="text" class="contact__email contact__main-style" placeholder="Куда мне писать">
-                      </div>
+                        <input type="text" class="contact__email contact__main-style" placeholder="Куда мне писать" qtip-content="Вы не ввели Email" qtip-position='right'>
+                      </label>
                     </div>
-                    <div class="contact__wrap-element">
-                      <div class="contact__title">Соощение</div>
-                      <textarea name="#" id="" class="contact__message contact__main-style" placeholder="Кратко в чем суть"></textarea>
-                    </div>
-                    <div class="contact__wrap-element contact__wrap-element_margin">
+                    <label class="contact__wrap-element">
+                        <div class="contact__title">Соощение</div>
+                        <textarea name="#" id="" class="contact__message contact__main-style" placeholder="Кратко в чем суть" qtip-content="Ваш вопрос" qtip-position='left'></textarea>
+                    </label>
+                    <label class="contact__wrap-element contact__wrap-element_margin">
                       <div class="contact__title">Введите код, указанный на картинке</div>
                       <div class="col-left">
-                        <div class="contact__capcha contact__main-style"></div>
+                        <div class="contact__capcha contact__main-style">
+                          <img src="./img/capha.png" alt="123" class="contact__capcha__img">
+                        </div>
                       </div>
                       <div class="col-right">
-                        <input type="text" class="contact__kod contact__main-style" placeholder="Введите код">
+                        <input type="text" class="contact__kod contact__main-style" placeholder="Введите код" qtip-content="Вы не ввели код" qtip-position='right'>
                       </div>
-                    </div>
+                    </label>
                     <div class="contact__wrap-element">
                       <div class="col-left">
                         <button class="contact__button" type="submit" name="button">Отправить</button>
@@ -137,7 +139,6 @@
      <script src="./bower/bpopup/jquery.bpopup.min.js"></script>
      <script src="./bower/qtip2/jquery.qtip.min.js"></script>
      <script src="./js/main.js"></script>
-     <script src="./js/main2.js"></script>
      <script src = './js/valid.js'></script>
      <script src = './js/contactme.js'></script>
   </body>
