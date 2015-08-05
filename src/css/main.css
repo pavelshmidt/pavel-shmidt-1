@@ -797,3 +797,8 @@ a {
   display: none;
   position: relative;
 }
+
+.form-style_error {
+  border-color: #f97e76;
+  background-color: rgba(249, 126, 118, 0.329);
+}

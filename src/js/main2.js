@@ -34,19 +34,8 @@ var myModyle = function () {
     var form = $(this),
         url = "js/add_progect.php",
         myServer = _ajaxForm(form,url);
-        //data = form.serialize();
 
-    console.log(data);
-    //Запрос на сервер
-    // $.ajax({
-    //   url: url,
-    //   type: 'POST',
-    //   dataType: 'json',
-    //   data: data
-    // })
     myServer.done(function(ans) {
-      console.log(ans);
-      console.log("success");
       if (ans.status === 'ok') {
         form.find('.add-progect__add-window').show();
         form.find('.add-progect__error').hide();
@@ -56,13 +45,6 @@ var myModyle = function () {
         form.find('.add-progect__add-window').hide();
       }
     })
-    // .fail(function() {
-    //   console.log("error");
-    // })
-    // .always(function() {
-    //   console.log("complete");
-    // });
-
   }
   // Универсальная функция
   // 1.собирает данные из формы

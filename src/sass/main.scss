@@ -651,3 +651,9 @@
   display: none;
   position: relative;
 }
+.form-style {
+  &_error {
+    border-color: rgb( 249, 126, 118 );
+    background-color: rgba( 249, 126, 118, 0.329 );
+  }
+}

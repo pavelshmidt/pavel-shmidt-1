@@ -4,4 +4,5 @@
 @import "../font/firasans/stylesheet.css";
 @import "../font/ProximaNova/stylesheet.css";
 @import "./main.css";
+@import "../bower/qtip2/jquery.qtip.min.css"
 /*@import "./about.css"*/
