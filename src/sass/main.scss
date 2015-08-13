@@ -26,7 +26,21 @@
 }
 .main-content {
   &_padding {
-    padding: 5% 0px;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 90px;
+    //height: 100%;
+  }
+  &_before:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
   }
 }
 .header {
@@ -290,7 +304,9 @@
     }
   }
   &_shadow{
-    max-width: 590px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 590px;
     border-radius: 4px;
     box-shadow: 0px 4px 7px 2px rgba(0 , 0, 0, .3);
     margin:auto;
@@ -340,7 +356,7 @@
   &__item {
     display: inline-block;
     width: 183px;
-    height: 195px;
+    //height: 195px;
     margin-right: 25px;
     margin-bottom: 46px;
     vertical-align:top;
@@ -405,7 +421,7 @@
       overflow: hidden;
     }
     &__desc {
-      height: 37px;
+      min-height: 37px;
       font: 15px "FiraSans-Light";
       text-align: center;
       color: #4a545d;
@@ -584,8 +600,9 @@
   &__file {
     float: left;
     width: 52px;
-    height: 4px;
+    height: 40px;
     opacity: 0;
+    filter: alpha(opacity=0);
     // //font-size: 0px;
     // padding:0px;
     // margin:0px;
@@ -601,6 +618,9 @@
       top: 9px;
       left: 9px;
       color: #aaa;
+    }
+    &_fix {
+
     }
   }
   &__filetext {
@@ -672,7 +692,10 @@
 }
 .form-style {
   &_error {
-    border-color: rgb( 249, 126, 118 );
+    border-color: rgb( 249, 12, 118 );
     background-color: rgba( 249, 126, 118, 0.329 );
   }
+}
+.placeholder {
+  color:#48cbe8;
 }

@@ -5,7 +5,6 @@ var Modlogin = function () {
   };
   //Прослушка события
   var _setUpListners = function () {
-    console.log("123");
     $('#Form-authorization').on('submit', _validForm)
   }
   var _validForm = function () {
