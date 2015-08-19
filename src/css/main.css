@@ -252,6 +252,7 @@ a {
       margin-bottom: 7px;
       border-radius: 4px;
       text-align: center;
+      background: url("../img/skill-bg.png") repeat-x;
       background: linear-gradient(to bottom, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 100%);
       font: 14px "ProximaNova-Semi";
       line-height: 19px;
@@ -363,6 +364,8 @@ a {
     height: 100%;
     width: 100%;
     padding: 30% 0px;
+    background: #016ca4;
+    filter: alpha(opacity=60);
     background: rgba(1, 108, 164, 0.4);
     text-align: center; }
     .portfolio__item__picture-hover__link {

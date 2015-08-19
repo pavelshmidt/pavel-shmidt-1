@@ -257,6 +257,8 @@
       margin-bottom: 7px;
       border-radius: 4px;
       text-align: center;
+      background: url("../img/skill-bg.png") repeat-x;
+      //background-size: cover;
       background: linear-gradient(to bottom, #3ba8c0 0%, #3ba8c0 49%, #2e8ca2 50%, #2e8ca2 100%);
       font: 14px "ProximaNova-Semi";
       line-height: 19px;
@@ -398,6 +400,8 @@
       height: 100%;
       width: 100%;
       padding: 30% 0px;
+      background: rgb(1, 108, 164);
+      filter:alpha(opacity=60);
       background: rgba(1 , 108, 164, .4);
       text-align: center;
       &__link {
